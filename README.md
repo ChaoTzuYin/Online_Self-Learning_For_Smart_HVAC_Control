@@ -8,7 +8,7 @@ Compared with our old version published in IEEE SMC 2019, there are three majior
 <img src="./png/Network.png" width="500" height="375"><br>
 
 2. To prevent the setpoint from changing extremely and frequently, OSLN+ additionally learns to predict the long-term temperature convergence tendency for representing the stability of the corresponding setpoint. <br>
-<img src="./png/Lrecon.png" width="250" height="125"><br>
+<img src="./png/Lrecon.png" width="250" height="100"><br>
 3. Moreover, to better regularize the network during learning with limited data samples, we design a novel constraint loss to guide the physical prior for the network. We penalize the network when it predicts the future temperature using the wrong assumption that violates the physical rule (e.g., when the network considers the AHU temperature setpoint is negative related to the output predicted future temperature, it gets a loss value from such constraint.) <br>
 <img src="./png/Lgradient.png" width="500" height="125"><br>
 
