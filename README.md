@@ -4,7 +4,7 @@ This is the upgrade version of our publication <a href="https://ieeexplore.ieee.
 
 Compared with our old version published in IEEE SMC 2019, there are three majior difference in OSLN+:<br>
 
-1. To prevent the setpoint from changing extremely and frequently, OSLN+ additionally learns to predict the long-term temperature convergence tendency for representing the stability of the corresponding setpoint. <br>
+1. To prevent the setpoint from changing extremely and frequently, OSLN+ additionally learns to predict the long-term temperature convergence tendency for representing the stability of the corresponding setpoint. Here, S represents the environment state (i.e., temperature in the office), E represents the uncontrable environment factors which may affect the environment state, and A represents the controllable action (i.e., the AHU output air temperature setpoint).<br>
 <div align="center"><img src="./png/Network.png" width="500" height="375" alt="Paris" class="center"></div><br>
 
 2. OSLN+ is designed as an auto-encoder form with a latent predictor. Considering there are different sensor combinations in different target offices, this design increase the extensive ability so that it is possible to share/transfer the latent predictor in future research. (i.e., the encoder/decoder can be viewed as the "domain converter" if we apply transfer learning or meta-learning for OSLN+ in future research; each domain has its specifical encoder/decoder but shares the latent predictor.)<br>
