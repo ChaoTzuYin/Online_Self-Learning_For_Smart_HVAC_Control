@@ -11,14 +11,22 @@ def get_current_time():
     Hr,Min = Time.split('.')[0].split(':')[:-1]
     return [float(item) for item in [Y,M,D,Hr,Min]]
 
-def record_data(np_array, filename='dataset'):
+def record_data(np_array, filename='dataset', filepath=None):
     fields=np_array[0].tolist()
-    with open(r'./data_logs/'+filename+'.csv', 'a') as f:
-        writer = csv.writer(f)
-        writer.writerow(fields)
+    if(filepath is not None):
+        with open(r''+filepath, 'a', newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(fields)
+    else:
+        with open(r'./simulation_dataset/'+filename+'.csv', 'a', newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(fields)
         
 def save_model(model, checkpoint_dir):
     current_records = os.listdir(checkpoint_dir)
     idx = [int(item.split('.')[1]) for item in current_records]
     latest_idx = max(idx)
     torch.save(model, checkpoint_dir+'/OSLN_plus.'+str(latest_idx+1)+'.pth') 
+
+def save_latest_model(model, checkpoint_dir):
+    torch.save(model, checkpoint_dir)
