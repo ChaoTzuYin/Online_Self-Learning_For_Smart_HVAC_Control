@@ -5,8 +5,8 @@ Compared with our old version published in IEEE SMC 2019, to prevent the setpoin
 The code simulates the control process of OSLN+ in the real-world environment using an NN-based environment model trained with dataset collected from a large scale office.
 
 ## Requirement
--pandas                    1.3.5
--torch                     1.11.0
+-pandas 1.3.5<br>
+-torch 1.11.0<br>
 
 ## About the code
 
