@@ -10,7 +10,7 @@ class _encoder(nn.Module):
         assert m == len(state), f"m: {m} != len(state): {len(state)}"
         self.n = n
         self.m = m
-        self.s_key = [key for key in list(range(n)) if key not in action]
+        self.s_key = [key for key in list(range(n)) if key in state]
         self.a_key = [key for key in list(range(n)) if key not in state]
         self.state_encoder = nn.Sequential(
             nn.Linear(len(self.s_key), 32),
