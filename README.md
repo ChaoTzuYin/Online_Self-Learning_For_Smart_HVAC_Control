@@ -12,10 +12,8 @@ Compared with our old version published in IEEE SMC 2019, there are three majior
 3. Moreover, to better regularize the network during learning with limited data samples, we design a novel constraint loss to guide the physical prior for the network. We penalize the network when it predicts the future temperature using the wrong assumption that violates the physical rule (e.g., when the network considers the AHU temperature setpoint is negative related to the output predicted future temperature, it gets a loss value from such constraint.) <br>
 <div align="center"><img src="./png/Lgradient.png" width="500" height="125" alt="Paris" class="center"></div><br>
 
-
-
 ## About the code
-The code simulates the control process of OSLN+ in the real-world environment using an NN-based environment model trained with dataset collected from a large scale office. For executing the control simulation, please run this file. With the default setting, the record file will appear in experimental_record.<br>
+The code simulates the control process of OSLN+ in the real-world environment using an NN-based environment model trained with dataset collected from a large scale office. For executing the control simulation, please run AIplayground.py. With the default setting, the record file will appear in experimental_record.<br>
 <div align="center"><img src="./png/architecture.jpg" width="750" height="375" alt="Paris" class="center"></div><br>
 
 ## Requirement
