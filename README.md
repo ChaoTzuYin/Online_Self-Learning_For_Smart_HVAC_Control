@@ -10,5 +10,12 @@ The code simulates the control process of OSLN+ in the real-world environment us
 
 ## About the code
 
+### AI_playground.py 
+For executing the control simulation, please run this file. With the default setting, the record file will appear in experimental_record.
+
+### 
+
+
+
 
 
