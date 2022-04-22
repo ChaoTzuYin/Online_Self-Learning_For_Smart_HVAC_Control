@@ -9,7 +9,7 @@ The code simulates the control process of OSLN+ in the real-world environment us
 -torch 1.11.0<br>
 
 ## About the code
-<img src="./png/Architecture.png" width="500" height="250">
+<img src="./png/architecture.jpg" width="500" height="250">
 ### AI_playground.py 
 For executing the control simulation, please run this file. With the default setting, the record file will appear in experimental_record.
 
