@@ -9,7 +9,7 @@ Compared with our old version published in IEEE SMC 2019, there are three majior
 
 2. OSLN+ is designed as an auto-encoder form with a latent predictor. Considering there are different sensor combinations in different target offices, this design increase the extensive ability so that it is possible to share/transfer the latent predictor in future research. (i.e., the encoder/decoder can be viewed as the "domain converter" if we apply transfer learning or meta-learning for OSLN+ in future research; each domain has its specifical encoder/decoder but shares the latent predictor.)<br>
 <div align="center"><img src="./png/Lrecon.png" width="250" height="75" alt="Paris" class="center"></div><br>
-3. Moreover, to better regularize the network during learning with limited data samples, we design a novel constraint loss to guide the physical prior for the network. We penalize the network when it predicts the future temperature using the wrong assumption that violates the physical rule (e.g., when the network considers the AHU temperature setpoint is negative related to the output predicted future temperature, it gets a loss value from such constraint.) <br>
+3. Moreover, to better regularize the network during learning with limited data samples, we design a novel constraint loss to guide the physical prior for the network. We penalize the network when it predicts the future temperature using the wrong assumption that violates the physical rule (e.g., when the network considers the AHU temperature setpoint to be negative related to the output predicted future temperature, it receives a loss value from such constraint.) <br>
 <div align="center"><img src="./png/Lgradient.png" width="500" height="125" alt="Paris" class="center"></div><br>
 
 ## About the code
