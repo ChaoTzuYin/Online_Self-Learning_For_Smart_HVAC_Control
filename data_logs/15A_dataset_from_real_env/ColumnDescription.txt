@@ -1,0 +1,19 @@
+A. Year
+B. Month
+C. Day
+D. Hour
+E. Minute
+F. AHU output air temperature set point (Control parameter)
+G~K. VAV 1 ~ VAV 5 return air temperature
+L~P. VAV 1 ~ VAV 5 output air valve opening
+Q~U. FCU 1 ~ FCU 5 return air temperature
+V~Z. FCU 1 ~ FCU 5 cooling coil valve opening
+AA~AE. FCU on/off
+AF~AJ. VAV on/off
+AK. AHU air duct static pressure
+AL. MAU output air temperature
+AM. Out door air temperature
+AN. Rain(1) / Sunny(0)
+AO~AP. Power load of the office (the HVAC system is excluded)
+
+*Due to the property issue, we provide the dataset column discription instead.
