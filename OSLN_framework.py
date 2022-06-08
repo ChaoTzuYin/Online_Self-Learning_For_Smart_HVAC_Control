@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Feb 20 19:02:11 2022
-@author: Chao, Tzu-Yin
-"""
-import torch
 from torch import nn
 import pandas as pd
 import Trainer as tr
@@ -14,7 +8,6 @@ import Memory as mom
 import numpy as np
         
 class OSLN_Prototype(nn.Module):
-    #Abstract class
     def __init__(self):
         super().__init__()
         self.Trainer = None

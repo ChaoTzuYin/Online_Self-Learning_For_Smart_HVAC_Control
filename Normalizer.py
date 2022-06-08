@@ -170,10 +170,10 @@ class Null_Normalizer(nn.Module):
         self.normalize_ = nn.Identity()
         self.denormalize_ = nn.Identity()
         
-    def normalize(self, x, other):
+    def normalize(self, x, other=None):
         return self.normalize_(x)
     
-    def denormalize(self, x, other):
+    def denormalize(self, x, other=None):
         return self.denormalize_(x)
 
 if __name__ == '__main__':

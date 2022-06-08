@@ -97,7 +97,7 @@ class MainModel(nn.Module):
         self.Eval_net = Core(action_feature=a_dim, state_feature=s_dim)
         self.Normalizer = sc.Null_Normalizer()
         
-        for param in self.Eval_net.parameters():
+        for param in self.Target_net.parameters():
             param.requires_grad = False
     @property
     def device(self):
@@ -108,7 +108,7 @@ class MainModel(nn.Module):
         self.Normalizer = Normalizer
 
     def Predict(self, in_):
-        LS_R, LS_r, _ = self.forward(in_=in_, name="Target", return_Q=False)
+        LS_R, LS_r, _ = self.forward(in_=in_, name="Eval", return_Q=False)
         return LS_R, LS_r
 
     def forward(self, in_, name, return_Q=True):
