@@ -13,7 +13,7 @@ Compared with our old version published in IEEE SMC 2019, there are three majior
 <div align="center"><img src="./png/Lgradient.png" width="500" height="125" alt="Paris" class="center"></div><br>
 
 ## About the code
-The code simulates the control process of OSLN+ in the real-world environment using an NN-based environment model trained with dataset collected from a large scale office. For executing the control simulation, please run AIplayground.py. With the default setting, the record file will appear in experimental_record.<br>
+The code simulates the control process of OSLN+ in the real-world environment using an NN-based environment model trained with dataset collected from a large scale office. For executing the control simulation, please run AIplayground.py. However, due to the property issue, we are not yet allowed to release the dataset; nevertheless, we provide the dataset discription instead. Please refere to ./data_log/15A_dataset_from_real_env.<br>
 <div align="center"><img src="./png/architecture.jpg" width="750" height="375" alt="Paris" class="center"></div><br>
 
 ## Requirement
